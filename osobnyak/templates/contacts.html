@@ -1,4 +1,5 @@
 {% extends 'base.html' %}
+{% load static %}
 
 {% block 'content' %}
 <section class="hero-wrap hero-wrap-2" style="background-image: url('static/images/bg_3.jpg');"
@@ -27,7 +28,7 @@
                                 <h3 class="mb-4">Напишите нам</h3>
                                 <div id="form-message-warning" class="mb-4"></div>
                                 <div id="form-message-success" class="mb-4">
-                                    Ваше сообщение было отправено!
+                                    Ваше сообщение было отправлено!
                                 </div>
                                 <form method="POST" id="contactForm" name="contactForm" class="contactForm">
                                     <div class="row">
@@ -115,4 +116,7 @@
         </div>
     </div>
 </section>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+<script src="{% static 'js/google-map.js' %}"></script>
 {% endblock %}
