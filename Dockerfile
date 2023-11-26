@@ -1,7 +1,7 @@
 FROM python:3.11-slim
 
 RUN apt-get update \
-    && apt-get install -y git gcc \
+    && apt-get install -y git gcc libffi-dev \
     && rm -rf /var/lib/apt/lists/*
 RUN pip install poetry==1.3.2
 WORKDIR /app
