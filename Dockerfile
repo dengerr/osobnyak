@@ -10,4 +10,4 @@ ENV PYTHONDONTWRITEBYTECODE 1
 ENV PYTHONUNBUFFERED 1
 
 EXPOSE 8457
-ENTRYPOINT ["poetry", "run", "gunicorn", "project.wsgi:application", "--bind", "0.0.0.0:8457"]
+ENTRYPOINT ["gunicorn", "project.wsgi:application", "--bind", "0.0.0.0:8457"]
