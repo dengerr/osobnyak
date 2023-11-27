@@ -1,14 +1,9 @@
 FROM python:3.11-slim
 
-RUN apt-get update \
-    && apt-get install -y git gcc libffi-dev musl-dev python3-dev openssl \
-    && rm -rf /var/lib/apt/lists/*
-RUN pip install --upgrade pip
-RUN pip install poetry==1.3.2
 WORKDIR /app
-COPY pyproject.toml poetry.lock ./
-RUN poetry install --no-cache --no-root --no-interaction \
-    && rm pyproject.toml poetry.lock
+COPY requirements.txt ./
+RUN pip install -r requirements.txt
+    && rm requirements.txt
 COPY . /app
 
 ENV PYTHONDONTWRITEBYTECODE 1
