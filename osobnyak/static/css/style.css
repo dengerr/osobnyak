@@ -3497,6 +3497,29 @@ input[type="button"].btn-block {
     color: white;
 }
 
+.category-index a {
+    color: black;
+    font-size: 130%;
+}
+
+.catalog-text {
+    color: black;
+    font-size: 110%;
+}
+
+.catalog .price {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.catalog-item-photo img {
+    width: 100%;
+}
+
+.catalog-item {
+    border-bottom: 1px gray solid;
+}
+
 .navbar-nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -8373,7 +8396,7 @@ nav .social-media {
           z-index: 0;
           color: rgba(255, 255, 255, 0.9); }
         .owl-carousel.home-slider .slider-item .slider-text h1 {
-          font-size: 80px;
+          font-size: 60px;
           font-weight: 800;
           letter-spacing: 7px;
           text-transform: uppercase;

@@ -47,6 +47,7 @@
 	    dots: true,
 	    autoplayHoverPause: false,
 	    items: 1,
+	    autoplayTimeout: 8000,
 	    navText : ["<span class='ion-ios-arrow-back'></span>","<span class='ion-ios-arrow-forward'></span>"],
 	    responsive:{
 	      0:{
@@ -206,4 +207,3 @@
 
 
 })(jQuery);
-
