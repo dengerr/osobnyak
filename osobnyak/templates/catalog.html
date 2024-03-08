@@ -41,14 +41,16 @@
 
 {% regroup items by category as category_list %}
 {% for category, item_list in category_list %}
-<div id="{{category}}">
+<div id="{{category.slug}}">
 {% for item in item_list %}
 <section class="ftco-section ftco-no-pb ftco-no-pt mt-5 mb-5 catalog">
     <div class="container">
         <div class="row catalog-item">
             <div class="col-lg-6 col-md-12 catalog-item-photo">
                 <h2>{{ item.title|linebreaks }}</h2>
-                <img src="{% static item.images.0 %}" alt="">
+                {% for image in item.images.all %}
+                    <img src="{{ image.image.url }}" alt="">
+                {% endfor %}
                 <div class="price">Цена {{ item.price }} руб.</div>
             </div>
 
