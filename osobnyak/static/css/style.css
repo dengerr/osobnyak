@@ -3479,47 +3479,6 @@ input[type="button"].btn-block {
 		width: 150px;
 	}
 
-.catalog-link {
-  text-align: left;
-  background: #406068;
-  border: 8px #fdbe34 solid;
-  border-radius: 30% 0 30% 0;
-}
-.catalog-link a {
-  font-weight: bold;
-  font-size: 40px;
-  color: white;
-  padding: 8px 20px;
-  margin: 0;
-}
-
-.header-phones a {
-    color: white;
-}
-
-.category-index a {
-    color: black;
-    font-size: 130%;
-}
-
-.catalog-text {
-    color: black;
-    font-size: 110%;
-}
-
-.catalog .price {
-    font-size: 28px;
-    font-weight: bold;
-}
-
-.catalog-item-photo img {
-    width: 100%;
-}
-
-.catalog-item {
-    border-bottom: 1px gray solid;
-}
-
 .navbar-nav {
   display: -webkit-box;
   display: -ms-flexbox;

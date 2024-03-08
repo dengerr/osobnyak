@@ -1,0 +1,66 @@
+.index-page {
+    .block {
+        background-position: center;
+        background-size: cover;
+        width: 100%;
+        height: 350px;
+    }
+    .block p {
+        color: black;
+        margin: 0;
+        padding: 9px;
+    }
+    .block .header {
+        font-size: 24px;
+        line-height: 28px;
+        font-weight: bold;
+    }
+    .block-back {
+        background: rgba(255,255,255, 0.7);
+        height: 100%;
+    }
+    iframe {
+        max-width: 100%;
+    }
+}
+
+.catalog-link {
+  text-align: left;
+  background: #406068;
+  border: 8px #fdbe34 solid;
+  border-radius: 30% 0 30% 0;
+}
+.catalog-link a {
+  font-weight: bold;
+  font-size: 40px;
+  color: white;
+  padding: 8px 20px;
+  margin: 0;
+}
+
+.header-phones a {
+    color: white;
+}
+
+.category-index a {
+    color: black;
+    font-size: 130%;
+}
+
+.catalog-text {
+    color: black;
+    font-size: 110%;
+}
+
+.catalog .price {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.catalog-item-photo img {
+    width: 100%;
+}
+
+.catalog-item {
+    border-bottom: 1px gray solid;
+}
