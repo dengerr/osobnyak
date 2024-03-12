@@ -1,7 +1,7 @@
 FROM python:3.11-slim
 
 WORKDIR /app
-RUN sudo apt update && sudo apt-get install build-essential libssl-dev libffi-dev python3-dev
+RUN apt update && apt-get install build-essential libssl-dev libffi-dev python3-dev
 RUN pip install poetry==1.3.2
 COPY pyproject.toml poetry.lock ./
 RUN poetry install --no-cache --no-interaction \
