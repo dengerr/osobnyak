@@ -57,8 +57,24 @@
     font-weight: bold;
 }
 
-.catalog-item-photo img {
+.i-preview {
+    padding: 20px 0 15px;
+    margin-bottom: -10px;
+    list-style: none;
+    li {
+        cursor: pointer;
+        position: relative;
+        display: inline-block;
+        margin-bottom: 10px;
+    }
+}
+
+.i-big {
     width: 100%;
+}
+.i-small {
+    width: 75px;
+    height: 55px;
 }
 
 .catalog-item {

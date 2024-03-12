@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'osobnyak',
+    'easy_thumbnails',
 ]
 
 MIDDLEWARE = [
@@ -121,6 +122,13 @@ STATIC_ROOT = 'static'
 
 MEDIA_URL = 'media/'
 MEDIA_ROOT = 'media'
+
+THUMBNAIL_ALIASES = {
+    '': {
+        'small': {'size': (75, 55), 'crop': True},
+        'big': {'size': (636, 478), 'crop': True},
+    },
+}
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field

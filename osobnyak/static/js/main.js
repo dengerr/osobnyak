@@ -204,6 +204,10 @@
 	};
 	contentWayPoint();
 
+    jQuery('.catalog-item-photo .i-small').click(function(action) {
+        var $img = $(action.target);
+        $img.parents('.catalog-item-photo').find('.i-big').attr('src', $img.data('big'));
+    })
 
 
 })(jQuery);

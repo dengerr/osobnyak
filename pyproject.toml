@@ -10,6 +10,7 @@ python = "^3.11"
 Django = "^4.2.7"
 gunicorn = "^21.2.0"
 pillow = "^10.2.0"
+easy-thumbnails = "^2.8.5"
 
 [tool.poetry.group.dev.dependencies]
 pytest = "^7.4.3"
