@@ -9,12 +9,12 @@ class ImageInline(admin.TabularInline):
 
 @admin.register(Category)
 class CategoryAdmin(admin.ModelAdmin):
-    list_display = 'title', 'slug', 'ordering'
+    list_display = 'title', 'slug', 'page', 'ordering'
     list_editable = 'ordering',
 
 
 @admin.register(Product)
 class ProductAdmin(admin.ModelAdmin):
-    list_display = 'title', 'category', 'ordering'
-    list_editable = 'ordering',
+    list_display = 'title', 'category', 'ordering', 'enabled'
+    list_editable = 'ordering', 'enabled'
     inlines = [ImageInline]
