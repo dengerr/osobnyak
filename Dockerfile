@@ -1,9 +1,10 @@
 FROM python:3.11-slim
 
 WORKDIR /app
-COPY requirements.txt ./
-RUN pip install -r requirements.txt \
-    && rm requirements.txt
+RUN pip install poetry==1.3.2
+COPY pyproject.toml poetry.lock ./
+RUN poetry install --no-cache --no-interaction \
+    && rm pyproject.toml poetry.lock
 COPY . /app
 
 ENV PYTHONDONTWRITEBYTECODE 1
