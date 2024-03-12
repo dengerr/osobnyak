@@ -1,7 +1,7 @@
 FROM python:3.11-slim
 
 WORKDIR /app
-RUN apt update && apt install -y libjpeg-dev zlib1g zlib1g-dev
+RUN apt update && apt install -y libjpeg-dev zlib1g zlib1g-dev build-essential libssl-dev libffi-dev python3-dev
 COPY requirements.txt ./
 RUN pip install -r requirements.txt \
     && rm requirements.txt
