@@ -51,6 +51,7 @@
                     <h2>{{ item.title|linebreaks }}</h2>
                     <img src="{{ item.images.all.0.image|thumbnail_url:'big' }}" class="i-big"
                          alt="">
+                    {% if item.images.count > 1 %}
                     <ul class="i-preview">
                         {% for image in item.images.all %}
                         <li><img src="{{ image.image|thumbnail_url:'small' }}"
@@ -59,6 +60,7 @@
                                  alt=""></li>
                         {% endfor %}
                     </ul>
+                    {% endif %}
                     <div class="price">Цена {{ item.price }} руб.</div>
                 </div>
 
