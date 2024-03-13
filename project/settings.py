@@ -26,6 +26,7 @@ SECRET_KEY = os.getenv('SECRET_KEY', 'django-insecure-t4mxl&!7zdl+7%g6$460v@5q*4
 DEBUG = os.getenv('DJANGO_DEBUG', 'True').lower() in ('true', 'on', '1')
 
 ALLOWED_HOSTS = os.getenv('DJANGO_ALLOWED_HOSTS', '127.0.0.1').split(',')
+CSRF_TRUSTED_ORIGINS = ['https://osobnyak.su']
 
 
 # Application definition
