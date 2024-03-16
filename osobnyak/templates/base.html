@@ -25,28 +25,6 @@
 </head>
 <body>
 
-<!--<div class="container pt-1">-->
-<!--    <div class="row justify-content-between align-items-center">-->
-<!--        <div class="col">-->
-<!--            <a class="navbar-brand" href="index.html"><img src="static/images/logo.jpg" alt="logo"/></a>-->
-<!--        </div>-->
-<!--        <div class="col d-flex justify-content-end">-->
-<!--            <div class="social-media">-->
-<!--                <p class="mb-0 d-flex">-->
-<!--                    <!-1- <a href="index.html#" class="d-flex align-items-center justify-content-center"><span-->
-<!--                        class="fa fa-vk"><i class="sr-only">Vkontakte</i></span></a> -1->-->
-<!--                    <!-1- <a href="index.html#" class="d-flex align-items-center justify-content-center"><span-->
-<!--                        class="fa fa-odnoklassniki"><i class="sr-only">Odnoklassniki</i></span></a> -1->-->
-<!--                    <a href="index.html#" class="d-flex align-items-center justify-content-center"><span-->
-<!--                            class="fa fa-whatsapp"><i class="sr-only">Whatsapp</i></span></a>-->
-<!--                    <a href="index.html#" class="d-flex align-items-center justify-content-center"><span-->
-<!--                            class="fa fa-telegram"><i class="sr-only">Telegram</i></span></a>-->
-<!--                </p>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--    </div>-->
-<!--</div>-->
-
 <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
     <div class="container">
             <div class="col">
@@ -57,27 +35,11 @@
                     Постройте дом Вашей мечты вместе с нами!
                 </p>
 
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav"
-                        aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="fa fa-bars"></span> Меню
-                </button>
-    <!--            <form action="index.html#" class="searchform order-lg-last">-->
-    <!--                <div class="form-group d-flex">-->
-    <!--                    <input type="text" class="form-control pl-3" placeholder="Поиск">-->
-    <!--                    <button type="submit" placeholder="" class="form-control search"><span class="fa fa-search"></span>-->
-    <!--                    </button>-->
-    <!--                </div>-->
-    <!--            </form>-->
-                <div class="collapse navbar-collapse" id="ftco-nav">
-                    <ul class="navbar-nav mr-auto">
+                <div class="" id="ftco-nav">
+                    <ul class="navbar-nav">
                         <li class="nav-item{% if template_name == 'index' %} active{% endif %}"><a href="/" class="nav-link">Главная</a></li>
                         <li class="nav-item{% if template_name == 'houses' %} active{% endif %}"><a href="/houses" class="nav-link">Дома, Коттеджи</a></li>
                         <li class="nav-item{% if template_name == 'catalog' %} active{% endif %}"><a href="/catalog" class="nav-link">Модульные строения</a></li>
-<!--                        <li class="nav-item{% if template_name == 'about' %} active{% endif %}"><a href="about" class="nav-link">О&nbsp;нас</a></li>-->
-                        <!-- <li class="nav-item{% if template_name == 'team' %} active{% endif %}"><a href="team" class="nav-link">Наша команда</a></li> -->
-                        <!-- <li class="nav-item{% if template_name == 'projects' %} active{% endif %}"><a href="projects" class="nav-link">Галерея</a></li>-->
-                        <!-- <li class="nav-item{% if template_name == 'blog' %} active{% endif %}"><a href="blog" class="nav-link">Новости</a></li> -->
-<!--                        <li class="nav-item{% if template_name == 'contacts' %} active{% endif %}"><a href="contacts" class="nav-link">Контакты</a></li>-->
                     </ul>
                 </div>
             </div>
@@ -85,14 +47,6 @@
                 <a href="tel:+79134510438">+7 (913) 451-04-38</a><br>
                 <a href="tel:+79537735577">+7 (953) 773-55-77</a>
             </div>
-<!--        <div class="social-media"> -->
-<!--            <p class="mb-0 d-flex"> -->
-<!--                <!-1- <a href="index.html#" class="d-flex align-items-center justify-content-center"><span class="fa fa-vk"><i class="sr-only">Vkontakte</i></span></a> -1-> -->
-<!--                <!-1- <a href="index.html#" class="d-flex align-items-center justify-content-center"><span class="fa fa-odnoklassniki"><i class="sr-only">Odnoklassniki</i></span></a> -1-> -->
-<!--                <a href="index.html#" class="d-flex align-items-center justify-content-center"><span class="fa fa-whatsapp"><i class="sr-only">Whatsupp</i></span></a> -->
-<!--                <a href="index.html#" class="d-flex align-items-center justify-content-center"><span class="fa fa-telegram"><i class="sr-only">Telegeram</i></span></a> -->
-<!--            </p> -->
-<!--        </div> -->
     </div>
 </nav>
 <!-- END nav -->
@@ -100,282 +54,35 @@
 {% block 'content' %}
 {% endblock %}
 
-    <!--
-<section class="ftco-section testimony-section bg-primary">
-    <div class="container">
-        <div class="row justify-content-center mb-5">
-            <div class="col-md-7 text-center heading-section heading-section-white ftco-animate">
-                <span class="subheading">Testimonial</span>
-                <h2 class="mb-4">Happy Clients</h2>
-            </div>
-        </div>
-        <div class="row ftco-animate">
-            <div class="col-md-12">
-                <div class="carousel-testimony owl-carousel ftco-owl">
-                    <div class="item">
-                        <div class="testimony-wrap py-4">
-                            <div class="icon d-flex align-items-center justify-content-center"><span
-                                    class="fa fa-quote-left"></span></div>
-                            <div class="text">
-                                <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia
-                                    and Consonantia, there live the blind texts.</p>
-                                <div class="d-flex align-items-center">
-                                    <div class="user-img"
-                                         style="background-image: url(static/images/person_1.jpg)"></div>
-                                    <div class="pl-3">
-                                        <p class="name">Roger Scott</p>
-                                        <span class="position">Marketing Manager</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="testimony-wrap py-4">
-                            <div class="icon d-flex align-items-center justify-content-center"><span
-                                    class="fa fa-quote-left"></span></div>
-                            <div class="text">
-                                <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia
-                                    and Consonantia, there live the blind texts.</p>
-                                <div class="d-flex align-items-center">
-                                    <div class="user-img"
-                                         style="background-image: url(static/images/person_2.jpg)"></div>
-                                    <div class="pl-3">
-                                        <p class="name">Roger Scott</p>
-                                        <span class="position">Marketing Manager</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="testimony-wrap py-4">
-                            <div class="icon d-flex align-items-center justify-content-center"><span
-                                    class="fa fa-quote-left"></span></div>
-                            <div class="text">
-                                <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia
-                                    and Consonantia, there live the blind texts.</p>
-                                <div class="d-flex align-items-center">
-                                    <div class="user-img"
-                                         style="background-image: url(static/images/person_3.jpg)"></div>
-                                    <div class="pl-3">
-                                        <p class="name">Roger Scott</p>
-                                        <span class="position">Marketing Manager</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="testimony-wrap py-4">
-                            <div class="icon d-flex align-items-center justify-content-center"><span
-                                    class="fa fa-quote-left"></span></div>
-                            <div class="text">
-                                <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia
-                                    and Consonantia, there live the blind texts.</p>
-                                <div class="d-flex align-items-center">
-                                    <div class="user-img"
-                                         style="background-image: url(static/images/person_1.jpg)"></div>
-                                    <div class="pl-3">
-                                        <p class="name">Roger Scott</p>
-                                        <span class="position">Marketing Manager</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="testimony-wrap py-4">
-                            <div class="icon d-flex align-items-center justify-content-center"><span
-                                    class="fa fa-quote-left"></span></div>
-                            <div class="text">
-                                <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia
-                                    and Consonantia, there live the blind texts.</p>
-                                <div class="d-flex align-items-center">
-                                    <div class="user-img"
-                                         style="background-image: url(static/images/person_2.jpg)"></div>
-                                    <div class="pl-3">
-                                        <p class="name">Roger Scott</p>
-                                        <span class="position">Marketing Manager</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
--->
-
-<!--
-<section class="ftco-section">
-    <div class="container">
-        <div class="row justify-content-center mb-5 pb-3">
-            <div class="col-md-7 heading-section text-center ftco-animate">
-                <span class="subheading">Our Blog</span>
-                <h2>Recent Blog</h2>
-            </div>
-        </div>
-        <div class="row d-flex">
-            <div class="col-md-4 d-flex ftco-animate">
-                <div class="blog-entry align-self-stretch">
-                    <a href="blog-single.html" class="block-20 rounded"
-                       style="background-image: url('static/images/image_1.jpg');">
-                    </a>
-                    <div class="text mt-3 text-center">
-                        <div class="meta mb-2">
-                            <div><a href="#">January 30, 2020</a></div>
-                            <div><a href="#">Admin</a></div>
-                            <div><a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a></div>
-                        </div>
-                        <h3 class="heading"><a href="#">Even the all-powerful Pointing has no control about the blind
-                            texts</a></h3>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 d-flex ftco-animate">
-                <div class="blog-entry align-self-stretch">
-                    <a href="blog-single.html" class="block-20 rounded"
-                       style="background-image: url('static/images/image_2.jpg');">
-                    </a>
-                    <div class="text mt-3 text-center">
-                        <div class="meta mb-2">
-                            <div><a href="#">January 30, 2020</a></div>
-                            <div><a href="#">Admin</a></div>
-                            <div><a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a></div>
-                        </div>
-                        <h3 class="heading"><a href="#">Even the all-powerful Pointing has no control about the blind
-                            texts</a></h3>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 d-flex ftco-animate">
-                <div class="blog-entry align-self-stretch">
-                    <a href="blog-single.html" class="block-20 rounded"
-                       style="background-image: url('static/images/image_3.jpg');">
-                    </a>
-                    <div class="text mt-3 text-center">
-                        <div class="meta mb-2">
-                            <div><a href="#">January 30, 2020</a></div>
-                            <div><a href="#">Admin</a></div>
-                            <div><a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a></div>
-                        </div>
-                        <h3 class="heading"><a href="#">Even the all-powerful Pointing has no control about the blind
-                            texts</a></h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
--->
-
-
-<!--
-<section class="ftco-section ftco-no-pb ftco-no-pt mt-5 mb-5">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="bg-primary w-100 rounded px-md-0 px-4">
-                    <div class="row d-flex justify-content-center">
-                        <div class="col-lg-8 py-4">
-                            <div class="row">
-                                <div class="col-md-6 d-flex align-items-center">
-                                    <h2 class="mb-0" style="color:white; font-size: 24px;">Напишите нам</h2>
-                                </div>
-                                <div class="col-md-6 d-flex align-items-center">
-                                    <form action="index.html#" class="subscribe-form">
-                                        <div class="form-group d-flex">
-                                            <input type="text" class="form-control" placeholder="Email">
-                                            <input type="submit" value="Отправить" class="submit px-3">
-                                        </div>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
--->
-
 <footer class="footer">
-    <div class="container px-lg-5">
+    <div class="container px-lg-5 py-5">
         <div class="row">
-            <div class="col-md-9 py-5">
-                <div class="row">
-                    <div class="col-md-4 mb-md-0 mb-4">
-                        <h2 class="footer-heading">Компания «Особняк»</h2>
-                        <p style="color:#fff;">Эксперт в области частного малоэтажного строительства.</p>
-                        <ul class="ftco-footer-social p-0">
-                            <!-- <li class="ftco-animate"><a href="index.html#" class="d-flex align-items-center justify-content-center"><span class="fa fa-vk"><i class="sr-only">Vkontakte</i></span></a></li> -->
-                            <!-- <li class="ftco-animate"><a href="index.html#" class="d-flex align-items-center justify-content-center"><span class="fa fa-odnoklassniki"><i class="sr-only">Odnoklassniki</i></span></a></li> -->
-                            <li><a href="https://wa.me/79537735577" class="d-flex align-items-center justify-content-center"><span class="fa fa-whatsapp"><i class="sr-only">Whatsapp</i></span></a></li>
-                            <li><a href="https://t.me/Vladimir_LS" class="d-flex align-items-center justify-content-center"><span class="fa fa-telegram"><i class="sr-only">Telegram</i></span></a></li>
-                        </ul>
-                    </div>
-                    <div class="col-md-8">
-                        <div class="row justify-content-center">
-                            <div class="col-md-12 col-lg-10">
-                                <div class="row">
-                                    <div class="col-md-4 mb-md-0 mb-4">
-                                        <!-- <h2 class="footer-heading"></h2> -->
-                                        <ul class="list-unstyled">
-                                            <li><a href="/" class="nav-link">Главная</a></li>
-                                            <li><a href="/houses" class="nav-link">Дома, Коттеджи</a></li>
-                                            <li><a href="/catalog" class="nav-link">Модульные строения</a></li>
-<!--                                            <li><a href="about" class="nav-link">О нас</a></li>-->
-<!--                                            <li><a href="contacts" class="nav-link">Контакты</a></li>-->
-<!--                                            <li><a href="team" class="nav-link">Наша команда</a></li>-->
-                                        </ul>
-                                    </div>
-                                    <div class="col-md-4 mb-md-0 mb-4">
-                                        <!-- <h2 class="footer-heading"></h2> -->
-                                        <ul class="list-unstyled">
-<!--                                            <li><a href="projects" class="nav-link">Галерея</a></li>-->
-<!--                                            <li><a href="blog" class="nav-link">Новости</a></li>-->
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row mt-md-5">
-                    <div class="col-md-12">
-                        <p class="copyright" style="color:#fff;">Все права защищены ©
-                            <script>document.write(new Date().getFullYear());</script>
-                            <a href="https://osobnyak.su">osobnyak.su</a></p>
-                    </div>
-                </div>
+            <div class="col-md-6 mb-md-0 mb-4">
+                <h2 class="footer-heading">Компания «Особняк»</h2>
+                <p style="color:#fff;">Эксперт в области частного малоэтажного строительства.</p>
+                <ul class="ftco-footer-social p-0">
+                    <li><a href="https://wa.me/79537735577"
+                           class="d-flex align-items-center justify-content-center"><span
+                            class="fa fa-whatsapp"><i class="sr-only">Whatsapp</i></span></a></li>
+                    <li><a href="https://t.me/Vladimir_LS"
+                           class="d-flex align-items-center justify-content-center"><span
+                            class="fa fa-telegram"><i class="sr-only">Telegram</i></span></a></li>
+                </ul>
             </div>
-<!--
-            <div class="col-md-3 py-md-5 py-4 aside-stretch-right pl-lg-5">
-                <h2 class="footer-heading">Запросить стоимость</h2>
-                <form action="index.html#" class="contact-form">
-                    <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Ваше имя">
-                    </div>
-                    <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Ваш email">
-                    </div>
-                    <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Опишите ваши пожелания">
-                    </div>
-                    <div class="form-group">
-                        <textarea name="" id="" cols="30" rows="3" class="form-control"
-                                  placeholder="Сообщение"></textarea>
-                    </div>
-                    <div class="form-group">
-                        <button type="submit" class="form-control submit px-3">Отправить</button>
-                    </div>
-                </form>
+            <div class="col-md-6">
+                <ul class="list-unstyled">
+                    <li><a href="/" class="nav-link">Главная</a></li>
+                    <li><a href="/houses" class="nav-link">Дома, Коттеджи</a></li>
+                    <li><a href="/catalog" class="nav-link">Модульные строения</a></li>
+                </ul>
             </div>
--->
+        </div>
+        <div class="row mt-md-5">
+            <div class="col-md-12">
+                <p class="copyright" style="color:#fff;">Все права защищены ©
+                    <script>document.write(new Date().getFullYear());</script>
+                    <a href="https://osobnyak.su">osobnyak.su</a></p>
+            </div>
         </div>
     </div>
 </footer>
