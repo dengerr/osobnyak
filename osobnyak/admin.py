@@ -1,10 +1,18 @@
 from django.contrib import admin
+from django.template import Template, Context
 
 from .models import Category, Product, ProductImage
 
 
 class ImageInline(admin.TabularInline):
+    fields = 'ordering', 'miniature', 'image',
+    readonly_fields = 'miniature',
     model = ProductImage
+
+    def miniature(self, obj):
+        template = Template('''{% load thumbnail %}
+        <img src="{{ obj.image|thumbnail_url:'small' }}" alt="">''')
+        return template.render(Context({'obj': obj}))
 
 
 @admin.register(Category)
