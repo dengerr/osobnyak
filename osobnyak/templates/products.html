@@ -9,12 +9,17 @@
         <div class="row catalog-item">
             <div class="col-lg-6 col-md-12 catalog-item-photo">
                 <h2>{{ item.title|linebreaks }}</h2>
-                <img src="{{ item.images.all.0.image|thumbnail_url:'big' }}" class="i-big" alt="">
+                <div class="image-frame-root">
+                    <div class="image-frame-left" data-delta="-1"><span></span></div>
+                    <div class="image-frame-right" data-delta="1"><span></span></div>
+                    <img src="{{ item.images.all.0.image|thumbnail_url:'big' }}" class="i-big" alt="">
+                </div>
                 {% if item.images.count > 1 %}
                 <ul class="i-preview">
                     {% for image in item.images.all %}
                     <li><img src="{{ image.image|thumbnail_url:'small' }}"
                              data-big="{{ image.image|thumbnail_url:'big' }}"
+                             data-i="{{ forloop.counter0 }}"
                              class="i-small"
                              alt=""></li>
                     {% endfor %}

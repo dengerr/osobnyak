@@ -206,8 +206,26 @@
 
     jQuery('.catalog-item-photo .i-small').click(function(action) {
         var $img = $(action.target);
-        $img.parents('.catalog-item-photo').find('.i-big').attr('src', $img.data('big'));
+        var $big = $img.parents('.catalog-item-photo').find('.i-big');
+        $big.attr('src', $img.data('big'));
+        $big.data('current', $img.data('i'))
     })
 
+    jQuery('.image-frame-left, .image-frame-right').click(function(action) {
+        var $photo = $(action.target).parents('.catalog-item-photo')
+        var count = $photo.find('.i-small').length;
+        var $big = $photo.find('.i-big');
+
+        var i = ($big.data('current') || 0) + $(action.target).data('delta');
+        if (i == count ) {
+            i = 0;
+        } else if (i < 0) {
+            i = count - 1;
+        }
+
+        var $img = $photo.find('.i-small:eq(' + i + ')');
+        $big.attr('src', $img.data('big'));
+        $big.data('current', $img.data('i'))
+    })
 
 })(jQuery);

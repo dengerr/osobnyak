@@ -80,3 +80,33 @@
 .catalog-item {
     border-bottom: 1px gray solid;
 }
+
+.image-frame-root {
+    position: relative;
+}
+
+.image-frame-left, .image-frame-right {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.image-frame-left {
+    left: 0;
+}
+.image-frame-right {
+    right: 0;
+    transform: rotate(180deg);
+}
+.image-frame-left:hover, .image-frame-right:hover {
+    background-color: rgba(0,0,0, 0.3);
+}
+.image-frame-left span, .image-frame-right span {
+    background: url(/static/images/left.svg) transparent center no-repeat;
+    width: 20px;
+    height: 20px;
+}
