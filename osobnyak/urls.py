@@ -5,6 +5,8 @@ from django.urls import path
 from . import views
 
 urlpatterns = [
-    path('', views.page_view),
-    path('<str:template_name>', views.page_view),
-] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+    path('', views.index_view),
+    path('catalog', views.catalog_view),
+    path('houses', views.houses_view),
+]
+urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
