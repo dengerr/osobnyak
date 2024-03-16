@@ -10,8 +10,8 @@
             <div class="col-lg-6 col-md-12 catalog-item-photo">
                 <h2>{{ item.title|linebreaks }}</h2>
                 <div class="{% if item.images.all|length > 1 %} image-frame-root {% endif %}">
-                    <div class="image-frame-left" data-delta="-1"><span></span></div>
-                    <div class="image-frame-right" data-delta="1"><span></span></div>
+                    <div class="image-frame-left" data-delta="-1"><span data-delta="-1"></span></div>
+                    <div class="image-frame-right" data-delta="1"><span data-delta="1"></span></div>
                     <img src="{{ item.images.all.0.image|thumbnail_url:'big' }}" class="i-big" alt="">
                 </div>
                 {% if item.images.all|length > 1 %}

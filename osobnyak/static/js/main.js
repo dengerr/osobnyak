@@ -213,6 +213,7 @@
 
     jQuery('.image-frame-left, .image-frame-right').click(function(action) {
         var $photo = $(action.target).parents('.catalog-item-photo')
+        console.log($photo)
         var count = $photo.find('.i-small').length;
         var $big = $photo.find('.i-big');
 
