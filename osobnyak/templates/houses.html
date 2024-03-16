@@ -1,44 +1,8 @@
 {% extends 'base.html' %}
-{% load static %}
-{% load thumbnail %}
 
 {% block 'content' %}
 
-{% regroup items by category as category_list %}
-{% for category, item_list in category_list %}
-<div id="{{category.slug}}">
-    {% for item in item_list %}
-    <section class="ftco-section ftco-no-pb ftco-no-pt mt-5 mb-5 catalog">
-        <div class="container">
-            <div class="row catalog-item">
-                <div class="col-lg-6 col-md-12 catalog-item-photo">
-                    <h2>{{ item.title|linebreaks }}</h2>
-                    <img src="{{ item.images.all.0.image|thumbnail_url:'big' }}" class="i-big"
-                         alt="">
-                    {% if item.images.count > 1 %}
-                    <ul class="i-preview">
-                        {% for image in item.images.all %}
-                        <li><img src="{{ image.image|thumbnail_url:'small' }}"
-                                 data-big="{{ image.image|thumbnail_url:'big' }}"
-                                 class="i-small"
-                                 alt=""></li>
-                        {% endfor %}
-                    </ul>
-                    {% endif %}
-                    <div class="price">Цена {{ item.price }} руб.</div>
-                </div>
-
-                <div class="col-lg-6 col-md-12 catalog-item-description">
-                    <p>
-                        {{ item.description|linebreaks }}
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-    {% endfor %}
-</div>
-{% endfor %}
+{% include 'products.html' %}
 
 <section class="ftco-section ftco-no-pt ftco-no-pb">
     <div class="container-fluid px-md-0">
