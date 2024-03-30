@@ -2,6 +2,18 @@
 {% load thumbnail %}
 
 {% regroup items by category as category_list %}
+
+{% if category_list|length > 2 %}
+<div class="ftco-secion ftco-no-pb ftco-no-pt mt-5 mb-5 category-index">
+    <div class="container">
+        <div class="row">
+            {% for category, item_list in category_list %}
+            <div class="col-lg-3"><a href="#{{ category.slug }}">{{ category.title }}</a></div>
+            {% endfor %}
+    </div>
+</div>
+{% endif %}
+
 {% for category, item_list in category_list %}
 <div id="{{category.slug}}">
     {% for item in item_list %}
